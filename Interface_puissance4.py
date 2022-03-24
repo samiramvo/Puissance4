@@ -1,3 +1,6 @@
+#------------------
+#BRAVO A TOI SAMIRA
+#------------------
 
 import os
 from tkinter import image_types
