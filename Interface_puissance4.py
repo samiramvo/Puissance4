@@ -76,7 +76,7 @@ nb_lig=4;
 # Initialisation d'une surface à afficher
 screen = pygame.display.set_mode((taille))
 
-paint= pygame.image.load("C://Users//Samira//Documents//GitHub//Puissance4//assets//ciel_etoile.jpg").convert()
+paint= pygame.image.load("./assets/ciel_etoile.jpg").convert()
 screen.blit(paint,(0,0))
 
 def dessiner_plateau(tab):
@@ -95,9 +95,9 @@ def dessiner_plateau(tab):
         pygame.draw.line(paint,violet,(1100,100),(1100,500),4)
         
         
-        imgIA= pygame.image.load("C://Users//Samira//Documents//GitHub//Puissance4//assets//image Joueur.jpg").convert()
+        imgIA= pygame.image.load("./assets/image Joueur.jpg").convert()
         paint.blit(imgIA,(900,100))
-        imgJoueur= pygame.image.load("C://Users//Samira//Documents//GitHub//Puissance4//assets//image IA.jpg").convert()
+        imgJoueur= pygame.image.load("./assets/image IA.jpg").convert()
         paint.blit(imgJoueur,(1100,100))
         cercle1=pygame.draw.circle(paint,bleu_ciel,(1000,400),60)
         cercle2=pygame.draw.circle(paint,bleu_ciel,(1200,400 ),60)
@@ -124,7 +124,7 @@ dessiner_plateau(tab)
 pygame.display.update()                 
 #Mise en place d'une musique de fond
 pygame.mixer.init()
-pygame.mixer.music.load("C://Users//Samira//Documents//GitHub//Puissance4//assets//Bramsito_-_Sale_mood_ft._Booba.mp3")
+pygame.mixer.music.load("./assets/Bramsito_-_Sale_mood_ft._Booba.mp3")
             
 pygame.mixer.music.play()
         
