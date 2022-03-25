@@ -75,7 +75,7 @@ largeur = (nb_colonne* cases)+600;
 hauteur = (nb_ligne+1) * cases;
 taille = (largeur, hauteur);
 nb_col=2;
-nb_lig=4;
+nb_lig=5;
 # Initialisation d'une surface à afficher
 screen = pygame.display.set_mode((taille))
 
@@ -92,18 +92,18 @@ def dessiner_plateau(tab):
 
 
 
-        pygame.draw.rect(paint,noir,(900,cases,nb_col*cases2,(nb_lig)*cases))
-        pygame.draw.rect(paint,violet,(900,cases,nb_col*cases2,(nb_lig)*cases),5)
-        pygame.draw.line(paint,violet,(900,300),(1300,300),4)
-        pygame.draw.line(paint,violet,(1100,100),(1100,500),4)
+        pygame.draw.rect(paint,violet,(900,cases,nb_col*cases2,(nb_lig)*cases))
+        pygame.draw.rect(paint,noir,(900,cases,nb_col*cases2,(nb_lig)*cases),5)
+        pygame.draw.line(paint,noir,(900,300),(1300,300),4)
+        pygame.draw.line(paint,noir,(1100,100),(1100,600),4)
         
         
         imgIA= pygame.image.load("./assets/image Joueur.jpg").convert()
         paint.blit(imgIA,(900,100))
         imgJoueur= pygame.image.load("./assets/image IA.jpg").convert()
         paint.blit(imgJoueur,(1100,100))
-        cercle1=pygame.draw.circle(paint,bleu_ciel,(1000,400),60)
-        cercle2=pygame.draw.circle(paint,bleu_ciel,(1200,400 ),60)
+        cercle1=pygame.draw.circle(paint,blanc,(1000,400),60)
+        cercle2=pygame.draw.circle(paint,noir,(1200,400 ),60)
         
         
         for col in range (nb_colonne):
