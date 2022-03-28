@@ -79,7 +79,7 @@ nb_lig=5;
 # Initialisation d'une surface à afficher
 screen = pygame.display.set_mode((taille))
 
-paint= pygame.image.load("./assets/ciel_etoile.jpg").convert()
+paint= pygame.image.load("assets/ciel_etoile.jpg").convert()
 screen.blit(paint,(0,0))
 
 def dessiner_plateau(tab):
@@ -98,9 +98,9 @@ def dessiner_plateau(tab):
         pygame.draw.line(paint,noir,(1100,100),(1100,600),4)
         
         
-        imgIA= pygame.image.load("./assets/image Joueur.jpg").convert()
+        imgIA= pygame.image.load("assets/image Joueur.jpg").convert()
         paint.blit(imgIA,(900,100))
-        imgJoueur= pygame.image.load("./assets/image IA.jpg").convert()
+        imgJoueur= pygame.image.load("assets/image IA.jpg").convert()
         paint.blit(imgJoueur,(1100,100))
         cercle1=pygame.draw.circle(paint,blanc,(1000,400),60)
         cercle2=pygame.draw.circle(paint,noir,(1200,400 ),60)
